@@ -18,6 +18,11 @@
 \usepackage{lipsum}
 \usepackage{wrapfig}
 
+\hypersetup{%
+    pdfborder = {0 0 0}
+}
+
+
 \begin{document}
 \pagenumbering{gobble}
 
@@ -26,6 +31,17 @@
 \clearpage
 \tableofcontents
 \clearpage
+\pagenumbering{arabic}
+
+\input{introduction.tex}
+\clearpage
+\input{vulnerabilities.tex}
+\clearpage
+\input{fixOnVulnerability.tex}
+\clearpage
+\input{addedFunctionality.tex}
+\clearpage
+\input{references.tex}
 
 
 \end{document}
